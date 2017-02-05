@@ -3,7 +3,7 @@
 DOCKER_IMAGE=kolchinmax/docker-russian-phd-thesis
 
 function make() {
-  sudo docker run -it --rm -v `pwd`:/root $DOCKER_IMAGE make $1
+  docker run -it --rm -v `pwd`:/root $DOCKER_IMAGE make $1
 }
 
 case "$1" in
